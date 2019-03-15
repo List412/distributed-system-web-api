@@ -12,7 +12,7 @@ namespace distributed_system_web_api.Models
             
         }
 
-        public Picture(string name, byte[] picture)
+        public Picture(string name, string picture)
         {
             Name = name;
             File = picture;
@@ -23,6 +23,6 @@ namespace distributed_system_web_api.Models
         
         public string Name { get; set; }
         
-        public byte[] File { get; set; }
+        public string File { get; set; }
     }
 }
