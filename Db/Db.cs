@@ -30,9 +30,9 @@ namespace distributed_system_web_api.Db
            return picture.Id;
         }
 
-        public List<Picture> Get(ObjectId id)
+        public Picture Get(ObjectId id)
         {
-            return _collection.Find(x => x.Id == id).ToList();
+            return _collection.Find(x => x.Id == id).ToList().First();
         }
 
         public List<Picture> GetAll()
